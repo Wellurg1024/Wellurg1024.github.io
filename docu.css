@@ -1,58 +1,63 @@
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f9f9f9;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-    }
-    .article {
-        margin-bottom: 20px;
-        padding: 20px;
-        border: 2px solid #f0f0f0;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .article h2 {
-        color: #333;
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    .article p {
-        color: #666;
-        font-size: 16px;
-    }
-      /* 样式表 */
-      footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333; /* 设置默认文本颜色 */
+}
 
-        .progress {
-            height: 5px;
-            background-color: #007bff;
-            width: 0%;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
- /* 模态框样式 */
- .modal {
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    color: #666;
+    font-size: 16px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.progress {
+    height: 5px;
+    background-color: #007bff;
+    width: 0%;
+}
+
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -75,7 +80,6 @@
     transform: translateZ(0);
 }
 
-/* 关闭按钮样式 */
 .close {
     color: #aaa;
     float: right;
@@ -89,6 +93,7 @@
     text-decoration: none;
     cursor: pointer;
 }
+
 .modern-button {
     display: inline-block;
     padding: 10px 20px;
@@ -108,4 +113,58 @@
     background-color: #2980b9;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.container.dark-mode {
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+h1.dark-mode {
+    color: #fff;
+}
+
+.article.dark-mode {
+    border: 2px solid #555;
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.article h2.dark-mode {
+    color: #fff;
+}
+
+.article p.dark-mode {
+    color: #ccc;
+}
+
+footer.dark-mode {
+    background-color: #111;
+}
+
+.progress.dark-mode {
+    background-color: #007bff;
+}
+
+.modal.dark-mode {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content.dark-mode {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.close.dark-mode {
+    color: #aaa;
+}
+
+.modern-button.dark-mode {
+    background-color: #3498db;
 }
