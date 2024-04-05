@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    transition: background-color 0.4s;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        transition: background-color 0.4s;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 20px;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        transition: background-color 0.4s;
+    }
+
+    footer:hover {
+        background-color: #555;
+    }
+
+    a {
+    text-decoration: none;
+    color: inherit; /* 保持超链接的原有颜色 */
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Ultimate Internet Trash</h1>
+<h3 style="color: aqua;">UIT -- 一切你最不需要的信息</h3>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+
+<section id="about">
+    <h2>About me</h2>
+    <p>这是一个退学初中生的个人网站, <br>
+        这里有互联网的一切角落: 前端、linux、服务器、乃至游戏。<br>
+        这里什么都涉及, 什么都说个乐呵<br>
+    </p>
+</section>
+
+
+
+<a href="./blog/blog.md"><section id="linux">
+    <h2>Linux: 未来的新潮流? 或者终归是小众？</h2>
+    <p>这里有一份Linux指南, 请查收<br>
+        Linux 是一种自由和开放源码的类 UNIX 操作系统<br>
+        Linux 英文解释为 Linux is not Unix（LINUX不是UNIX）<br>
+        Linux 是在 1991 由林纳斯·托瓦兹在赫尔辛基大学上学时创立的, 主要受到 Minix 和 Unix 思想的启发。<br>
+        本教程, 我将告诉大家Linux能干什么, 怎么做<br>
+        Linux 其实很容易学, 相信大家能很快学会<br>
+    </section></a>
+
+<footer>
+    <p>&copy; 2022 My Website. All Rights Reserved.</p>
+</footer>
+</body>
+
+</html>
