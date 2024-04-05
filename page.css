@@ -67,26 +67,3 @@ a {
     color: inherit;
     /* 保持超链接的原有颜色 */
 }
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-header.dark-mode {
-    background-color: #111;
-}
-
-section.dark-mode {
-    background-color: #444;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-footer.dark-mode {
-    background-color: #111;
-}
-
-a.dark-mode {
-    color: #fff;
-}
