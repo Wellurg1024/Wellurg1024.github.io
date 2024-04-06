@@ -8,7 +8,7 @@ function myFunction() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("progress").style.width = scrolled + "%";
 
-    if (scrolled > 100.5) {
+    if (scrolled >= 100) {
         // 显示模态框
         document.getElementById("myModal").style.display = "block";
     }
