@@ -4,13 +4,13 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     transition: background-color 0.4s;
-    color: #333;
+    color: rgb(0, 60, 67);
     /* 设置默认文本颜色 */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(0, 60, 67);
+    color: rgb(227, 254, 247);
     text-align: center;
     padding: 10px 0;
     transition: background-color 0.4s;
@@ -29,13 +29,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(227, 254, 247);
     text-decoration: none;
 }
 
 section {
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(227, 254, 247);
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -48,8 +48,8 @@ section:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(0, 60, 67);
+    color: rgb(227, 254, 247);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -59,7 +59,7 @@ footer {
 }
 
 footer:hover {
-    background-color: #555;
+    background-color: rgb(19, 93, 102);
 }
 
 a {

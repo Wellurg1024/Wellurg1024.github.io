@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>002</title>
+    <link rel="stylesheet" type="text/css" href="../../css/docu.css">
+    <script src="../../js/docu.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>002 - 如何开设一个服务器</h1>
+
+        <div class="article">
+            <h2>安装Apache Web服务器</h2>
+            <ol>
+                <li>打开终端并以管理员身份登录到Debian系统。</li>
+                <li>运行以下命令来更新软件包列表：</li>
+            </ol>
+
+            <pre><code>sudo apt update</code></pre>
+
+            <ol start="3">
+                <li>安装Apache Web服务器：</li>
+            </ol>
+
+            <pre><code>sudo apt install apache2</code></pre>
+
+            <ol start="4">
+                <li>安装过程中，您可能需要提供管理员密码以完成安装。</li>
+                <li>安装完成后，Apache将自动启动并开始监听默认的HTTP端口( 80 )</li>
+            </ol>
+        </div>
+
+        <div class="article">
+            <h2>配置防火墙</h2>
+            <ol>
+                <li>如果您的Debian系统上启用了防火墙(例如<code>ufw</code>),您需要允许HTTP流量通过。运行以下命令来允许入站HTTP连接：</li>
+            </ol>
+
+            <pre><code>sudo ufw allow 'Apache'</code></pre>
+
+            <p>如果您使用的是其他防火墙工具，请根据其文档进行相应的配置。</p>
+        </div>
+
+        <div class="article">
+            <h2>启动和测试Web服务器</h2>
+            <ol>
+                <li>启动Apache Web服务器：</li>
+            </ol>
+
+            <pre><code>sudo service apache2 start</code></pre>
+            <pre><code>sudo service apache2 restart</code></pre>
+
+            <ol start="2">
+                <p>现在，输入服务器的局域网ip:80，如果一切正常，你将会看到Apache的默认部署界面，里面有详细的教程，就像下面这个</p>
+                <p>但是这还远远不够！所以在下一节，我们会有个更详细的</p>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <div class="progress" id="progress"></div>
+    </footer>
+    <!-- 模态框内容 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>恭喜你读完了！</p>
+            <a href="https://wellurg1024.github.io/linux/archive.html"><button class="modern-button">回到归档</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
