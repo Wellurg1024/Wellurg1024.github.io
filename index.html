@@ -5,7 +5,25 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+<title>Welcome</title>
+<script>
+    var titleText = [".","U","Ul", "Ult", "Ulti", "Ulti-", "Ulti-n", "Ulti-ne", "Ulti-net", "Ulti-net-t", "Ulti-net-tr", "Ulti-net-tra","Ulti-net-tras", "Ulti-net-trash", "Ulti-net-trash", "Ulti-net-trash", "Ulti-net-trash", "Ulti-net-trash"];
+    var index = 0;
+    var lastUpdate = 0;
+    var fpsInterval = 1000 / 4; // 2秒一次
+
+    function changeTitle(timestamp) {
+      if (timestamp - lastUpdate >= fpsInterval) {
+        document.getElementById("dynamic-title").innerText = titleText[index];
+        index = (index + 1) % titleText.length;
+        lastUpdate = timestamp;
+      }
+      
+      requestAnimationFrame(changeTitle);
+    }
+
+    requestAnimationFrame(changeTitle);
+</script>
 <link rel="stylesheet" type="text/css" href="./page.css">
 </head>
 <body>
