@@ -30,7 +30,6 @@
 
             <ol start="4">
                 <li>安装过程中，您可能需要提供管理员密码以完成安装。</li>
-                <li>安装完成后，Apache将自动启动并开始监听默认的HTTP端口( 80 )</li>
             </ol>
         </div>
 
@@ -55,7 +54,10 @@
             <pre><code>sudo service apache2 restart</code></pre>
 
             <ol start="2">
-                <p>现在，输入服务器的局域网ip:80，如果一切正常，你将会看到Apache的默认部署界面，里面有详细的教程，就像下面这个</p>
+                <p>Apache2监听的端口是80，所以如果没有调整过的话（我也不推荐你这样做）你的本地网站地址应该是ip:80</p>
+                <p>现在，输入服务器的局域网ip，如果一切正常，你将会看到Apache的默认部署界面，里面有详细的教程，就像下面这个</p>
+                <img src="./apache2-default-page.png" alt="apache2's default deploy page"
+                    style="width: 700px; height: auto;">
                 <p>但是这还远远不够！所以在下一节，我们会有个更详细的</p>
             </ol>
         </div>
