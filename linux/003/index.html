@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003</title>
+    <link rel="stylesheet" type="text/css" href="<link rel=" stylesheet" type="text/css" href="/css/docu.css">
+    <script src="/js/docu.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>003 - 如何给服务器增加内容</h1>
+
+        <div class="article">
+            <h2>JavaScript、CSS、HTML 是什么？</h2>
+            <p>
+                <strong>JavaScript</strong> 是一种用于在网页上实现交互和动态效果的编程语言。
+                它可以让你的网页具有更丰富的功能和用户体验。
+            </p>
+            <p>
+                <strong>CSS</strong>（层叠样式表）用于控制网页的样式和布局。
+                它可以定义字体、颜色、边距、背景等属性，使网页更加美观和易于阅读。
+            </p>
+            <p>
+                <strong>HTML</strong>（超文本标记语言）是一种用于创建网页结构和内容的标记语言。
+                它由一系列的标签组成，每个标签都有不同的含义和作用。
+            </p>
+        </div>
+
+        <div class="article">
+            <h2>一个网页的基本结构</h2>
+            <p>
+                一个典型的 HTML 网页由以下几个部分组成：
+            </p>
+            <ol>
+                <li><code>&lt;!DOCTYPE&gt;</code> 声明：它指定了文档类型和版本。</li>
+                <li><code>&lt;html&gt;</code> 元素：它是 HTML 文档的根元素。</li>
+                <li><code>&lt;head&gt;</code> 元素：它包含了网页的元数据，如标题、样式表和脚本等。</li>
+                <li><code>&lt;body&gt;</code> 元素：它包含了网页的可见内容，如文本、图像和其他元素。</li>
+            </ol>
+            <p>
+                下面是一个简单的网页示例：
+            </p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;我的网页&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;欢迎来到我的网页！&lt;/h1&gt;
+            &lt;p&gt;这是一个简单的网页示例。&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="article">
+            <h2>开始写一个网页吧！</h2>
+    <p>
+        要编写一个简单的前端网页，按照以下步骤进行：
+    </p>
+    <ol>
+        <li>创建一个新的 HTML 文件，例如 <code>index.html</code>。</li>
+        <li>使用文本编辑器打开该文件，并将上述示例代码复制到文件中。</li>
+        <li>根据需要修改 <code>&lt;title&gt;</code> 元素中的标题和 <code>&lt;h1&gt;</code> 元素中的欢迎消息。</li>
+        <li>在 <code>&lt;body&gt;</code> 元素中编写你的网页内容，可以使用其他 HTML 标签来创建段落、链接、图像等元素。</li>
+        <li>如果需要，可以创建一个单独的 CSS 文件（例如 <code>styles.css</code>）来定义网页的样式。</li>
+        <li>如果需要添加交互和动态效果，可以创建一个单独的 JavaScript 文件（例如 <code>script.js</code>）来编写相关代码。</li>
+        <li>在浏览器中打开该 HTML 文件，查看你的网页效果。</li>
+    </ol>
+
+        </div>
+        <div class="article">
+            <h2>如何上传到你的 Apache2 服务器上</h2>
+            <p>
+                要将你的网页上传到 Apache2 服务器上，可以按照以下步骤进行：
+            </p>
+            <ol>
+                <li>确保你的 Apache2 服务器已正确安装和配置。
+                    你可以使用命令 <code>sudo service apache2 status</code> 来检查 Apache2 服务器的状态。
+                </li>
+                <li>将你的 HTML 文件、CSS 文件和 JavaScript 文件复制到 Apache2 服务器的网站根目录。
+                    默认情况下，该目录在 Linux 上为 <code>/var/www/html/</code>。
+                </li>
+                <li>使用终端或 SSH 连接到你的服务器，并导航到网站根目录。</li>
+                <li>使用以下命令将文件复制到网站根目录：</li>
+            </ol>
+            <pre><code>sudo cp index.html styles.css script.js /var/www/html/</code></pre>
+            <ol start="5">
+                <li>确保复制的文件具有正确的权限，以便 Apache2 可以读取和提供它们：</li>
+            </ol>
+            <pre><code>sudo chown -R www-data:www-data /var/www/html/
+        sudo chmod -R 755 /var/www/html/</code></pre>
+            <ol start="6">
+                <li>现在，你的网页已经上传到 Apache2 服务器上。
+                    你可以通过输入服务器的 IP 地址或域名来访问你的网页。
+                    在浏览器中输入 <code>http://服务器IP地址:80/</code>，就可以查看你的网页了。
+                </li>
+            </ol>
+        
+            <p>请注意，这里提供的步骤和命令是基于默认配置的 Apache2 服务器。
+                <br>
+                如果你的服务器有特定的配置或使用其他 Web 服务器，可能需要进行适当的调整。
+                <br>
+                另请注意：这只是在你的本地局域网架设的服务器，在以后，我们会让整个互联网的用户都能访问他。 
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="progress" id="progress"></div>
+    </footer>
+    <!-- 模态框内容 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>恭喜你读完了！</p>
+            <a href="https://wellurg1024.github.io/linux/archive.html"><button class="modern-button">回到归档</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
