@@ -2,72 +2,96 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Welcome</title>
+    <title>Welcome</title>
 
-<link rel="stylesheet" type="text/css" href="./css/page.css">
+    <link rel="stylesheet" type="text/css" href="./css/page.css">
 
-<style>
+    <style>
+        .handwriting-animation {
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid orange;
+            animation: typing 5s steps(15) infinite, blink-caret 0.75s step-end infinite;
+            text-align: center;
+            /* 让内容水平居中 */
+        }
 
-.handwriting-animation {
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid orange;
-    animation: typing 5s steps(15) infinite, blink-caret 0.75s step-end infinite;
-    text-align: center; /* 让内容水平居中 */
-}
+        @keyframes typing {
+            from {
+                width: 0
+            }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 9em }
-}
+            to {
+                width: 9em
+            }
+        }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-}
-</style>
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-<h1>Ultimate Internet Trash</h1>
-<h3 style="color: aqua;"><div class="handwriting-animation">Ulti-net-trash</div> - 一切你最不需要的信息</h3>
-<nav>
-<ul>
-<li><a href="https://wellurg1024.github.io/">Home</a></li>
-</ul>
-</nav>
-</header>
+    <header>
+        <h1>Ultimate Internet Trash</h1>
+        <h3 style="color: aqua;">
+            <div class="handwriting-animation">Ulti-net-trash</div> - 一切你最不需要的信息
+        </h3>
+        <nav>
+            <ul>
+                <li><a href="https://wellurg1024.github.io/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
 
-<section id="about">
-    <h2>About me</h2>
-    <p>这是一个退学初中生的个人网站, <br>
-        这里有互联网的一切角落: 前端、linux、服务器、乃至游戏。<br>
-        这里什么都涉及, 什么都说个乐呵<br>
-    </p>
-</section>
+    <section id="about">
+        <h2>About me</h2>
+        <p>这是一个退学初中生的个人网站, <br>
+            这里有互联网的一切角落: 前端、linux、服务器、乃至游戏。<br>
+            这里什么都涉及, 什么都说个乐呵<br>
+        </p>
+    </section>
 
 
 
-<a href="./linux/archive.html"><section id="linux">
-    <h2>Linux: 未来的新潮流? 或者终归是小众？</h2>
-    <p>这里有一份Linux指南, 请查收<br>
-        Linux 是一种自由和开放源码的类 UNIX 操作系统<br>
-        Linux 英文解释为 Linux is not Unix（LINUX不是UNIX）<br>
-        Linux 是在 1991 由林纳斯·托瓦兹在赫尔辛基大学上学时创立的, 主要受到 Minix 和 Unix 思想的启发。<br>
-        本教程, 我将告诉大家Linux能干什么, 怎么做<br>
-        Linux 其实很容易学, 相信大家能很快学会<br>
-    </section></a>
+    <a href="./linux/archive.html">
+        <section id="linux">
+            <h2>Linux: 未来的新潮流? 或者终归是小众？</h2>
+            <p>这里有一份Linux指南, 请查收<br>
+                Linux 是一种自由和开放源码的类 UNIX 操作系统<br>
+                Linux 英文解释为 Linux is not Unix（LINUX不是UNIX）<br>
+                Linux 是在 1991 由林纳斯·托瓦兹在赫尔辛基大学上学时创立的, 主要受到 Minix 和 Unix 思想的启发。<br>
+                本教程, 我将告诉大家Linux能干什么, 怎么做<br>
+                Linux 其实很容易学, 相信大家能很快学会<br>
+        </section>
+    </a>
 
-<footer>
-    <p>email: Ulti_trash@yeah.net</p>
-</footer>
+    <a href="./web-app/archive.html">
+        <section id="linux">
+            <h2>自己做的一些小玩意儿</h2>
+            <p>这可以算作赛博玩具啦，哈哈<br>
+                都是无聊的时候自己瞎做的，源代码<a href="https://www.github.com"></a>github都有
+        </section>
+    </a>
+    <footer>
+        <p>email: Ulti_trash@yeah.net</p>
+    </footer>
 </body>
 
 </html>

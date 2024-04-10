@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    /* 深灰色背景 */
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#main-screen {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    /* 白色主屏幕 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* 模糊阴影效果 */
+    text-align: center;
+}
